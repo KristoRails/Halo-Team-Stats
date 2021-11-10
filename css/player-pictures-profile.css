@@ -1,0 +1,33 @@
+.player-pictures-container
+{
+    margin-top: 65px;
+}
+
+.player-picture-profile-item img
+{
+    width: 400px;
+    height: 600px;
+
+    margin-left: 20px;
+    filter: grayscale(100%);
+
+    position: relative;
+}
+
+.player-picture-profile-item img:hover
+{
+    filter: grayscale(0%);
+}
+
+.player-picture-profile-item:hover
+{
+    transform: scale(1.05);
+}
+
+.player-picture-profile-item
+{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
