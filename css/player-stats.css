@@ -1,0 +1,42 @@
+.players-rows {
+    margin-top: 3.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #272727;
+}
+
+.image-column {
+    margin-left: 4.5em;
+}
+
+.image-column img {
+    width: 260px;
+    height: 260px;
+    border: 5px solid #3D3D3D;
+}
+
+.player-stats {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.player-stats li {
+    margin-right: 80px;
+    margin-left: 10px;
+}
+
+.player-social-media {
+    color: white;
+    text-transform: uppercase;
+}
+
+.player-social-media img {
+    filter: invert(100%);
+    width: 50px;
+}
+
+.player-social-media li {
+    margin-right: 30px;
+    text-align: center;
+}

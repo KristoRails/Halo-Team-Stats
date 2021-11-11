@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="../Halo-Team-Stats/css/header.css">
     <link rel="stylesheet" href="../Halo-Team-Stats/css/main.css">
     <link rel="stylesheet" href="../Halo-Team-Stats/css/player-pictures-profile.css">
+    <link rel="stylesheet" href="../Halo-Team-Stats/css/player-stats.css">
 
     <!-- PHP files -->
     <?php 
     include '../Halo-Team-Stats/php_tags/header.php';
-    include '../Halo-Team-Stats/php_tags/player_picture_container.php';
+    include '../halo-team-stats/php_tags/player_stats.php';
     ?>
 
 </head>
@@ -28,7 +29,33 @@
 
     <!-- Calling PHP tag files -->
     <?php echo callHeader();?>
-    <?php echo getPlayerImages();?>
+
+    <div class="container-fluid">
+    <ul class="nav player-pictures-container d-flex justify-content-center">
+        <a href="#0"><li class="nav-item player-picture-profile-item">
+            <img src="../Halo-Team-Stats/images/profile-picture-mike.jpg">
+            <h4>Viable Manatee</h4>
+        </li></a>
+        <a href="#1"><li class="nav-item player-picture-profile-item">
+            <img src="../Halo-Team-Stats/images/profile-picture-avo.jpg">
+            <h4>Avo_JT</h4>
+        </li></a>
+        <a href="#2"><li class="nav-item player-picture-profile-item">
+            <img src="../Halo-Team-Stats/images/calvin_profile_picture.png">
+            <h4>ShadownintheHood</h4>
+        </li></a>
+        <a href="#3"><li class="nav-item player-picture-profile-item">
+            <img src="../Halo-Team-Stats/images/profile-picture.jpg">
+            <h4>Kristo Rails</h4>
+        </li></a>
+    </ul>
+</div>
+    
+    <div class="container-fluid">
+    <?php outputPlayerStats(); ?>
+    </div>
+
+    
     
 </body>
 </html>
