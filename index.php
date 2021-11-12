@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="../Halo-Team-Stats/css/main.css">
     <link rel="stylesheet" href="../Halo-Team-Stats/css/player-pictures-profile.css">
     <link rel="stylesheet" href="../Halo-Team-Stats/css/player-stats.css">
-
+    <link rel="stylesheet" href="../Halo-Team-Stats/css/footer.css">
+    
     <!-- PHP files -->
     <?php 
     include '../Halo-Team-Stats/php_tags/header.php';
@@ -27,7 +28,6 @@
 </head>
 <body>
 
-    <!-- Calling PHP tag files -->
     <?php echo callHeader();?>
 
     <div class="container-fluid">
@@ -52,7 +52,21 @@
 </div>
     
     <div class="container-fluid">
+    <?php inputDataFromXML(); ?>
     <?php outputPlayerStats(); ?>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container footer d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <h6>Powered by PHP 7.4</h6>
+                </li>
+                <li class="nav-item">
+                    <h6>Made by Vass Krisztian 'Kristo'</h6>
+                </li>
+            </ul>
+        </div>
     </div>
 
     
